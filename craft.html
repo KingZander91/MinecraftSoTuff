@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="en-US" />
+    <meta property="og:type" content="website" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sd592g/editor@5f7eeceff9c58972c2ad06a897860d2b9a07dbc7/src/utils/classes.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sd592g/editor@5f7eeceff9c58972c2ad06a897860d2b9a07dbc7/src/utils/fix-webm-duration.js"></script>
+
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        if (document.location.href.startsWith("file:")) {
+          alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+        } else {
+          window.eaglercraftXOpts = {
+            container: "game_frame",
+            assetsURI: "https://cdn.jsdelivr.net/gh/sd592g/editor@5f7eeceff9c58972c2ad06a897860d2b9a07dbc7/src/utils/assets.epk",
+            localesURI: "https://cdn.jsdelivr.net/gh/sd592g/editor@5f7eeceff9c58972c2ad06a897860d2b9a07dbc7/src/utils/lang/",
+            servers: [
+              { addr: "wss://mc.asspixel.net", name: "AssPixel" },
+              { addr: "wss://sus.shhnowisnottheti.me", name: "Ayunboom" },
+              { addr: "wss://aeon-network.net/1.8", name: "Aeon" },
+              { addr: "wss://beta.vanillacraftsmp.org/", name: "VanillaCraft" },
+              { addr: "wss://play.craftclue.rocks", name: "CraftClue" },
+              { addr: "wss://asianf4rmer.minecraft.pe", name: "Asian F4rmer-survival" },
+              { addr: "wss://mc.sealcentral.co", name: "SealCraft" },
+              { addr: "wss://g.deev.is/eaglerx-reference", name: "Reference Implementation" },
+              { addr: "wss://ggsmp.net", name: "GG SMP" },
+              { addr: "wss://zentic.cc", name: "Zentic" },
+
+            ],
+          };
+          main();
+        }
+      });
+    </script>
+	<script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
+  </head>
+  <body style='margin: 0px; width: 100vw; height: 100vh; overflow:hidden;' id='game_frame' onclick='window.focus()'></body>
+</html>
